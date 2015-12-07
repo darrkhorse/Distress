@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24C304F4DC553421D8118CB1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A38235AD93E216A3E42A787 /* Pods.framework */; };
+		C32ABF021C1531F800D933F5 /* CreateDistressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ABF011C1531F800D933F5 /* CreateDistressVC.swift */; settings = {ASSET_TAGS = (); }; };
+		C32ABF041C15352F00D933F5 /* DistressCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ABF031C15352F00D933F5 /* DistressCore.swift */; settings = {ASSET_TAGS = (); }; };
 		C3E02EB01C15104A00030EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E02EAF1C15104A00030EB4 /* AppDelegate.swift */; };
 		C3E02EB21C15104A00030EB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E02EB11C15104A00030EB4 /* ViewController.swift */; };
 		C3E02EB51C15104A00030EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E02EB31C15104A00030EB4 /* Main.storyboard */; };
@@ -19,6 +22,7 @@
 		C3E02ED31C15104A00030EB4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E02ED21C15104A00030EB4 /* InterfaceController.swift */; };
 		C3E02ED51C15104A00030EB4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E02ED41C15104A00030EB4 /* ExtensionDelegate.swift */; };
 		C3E02ED71C15104A00030EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E02ED61C15104A00030EB4 /* Assets.xcassets */; };
+		C3E02EE91C15140400030EB4 /* CustomCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E02EE81C15140400030EB4 /* CustomCVCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C065B371D407417C1CE2331 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8A38235AD93E216A3E42A787 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32ABF011C1531F800D933F5 /* CreateDistressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDistressVC.swift; sourceTree = "<group>"; };
+		C32ABF031C15352F00D933F5 /* DistressCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistressCore.swift; sourceTree = "<group>"; };
 		C3E02EAC1C15104A00030EB4 /* Distress_JohannHinck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Distress_JohannHinck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E02EAF1C15104A00030EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E02EB11C15104A00030EB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +88,8 @@
 		C3E02ED41C15104A00030EB4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		C3E02ED61C15104A00030EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3E02ED81C15104A00030EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E02EE81C15140400030EB4 /* CustomCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCVCell.swift; sourceTree = "<group>"; };
+		CACFAECADE92588FFD8E1FD7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C304F4DC553421D8118CB1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69A3163DF570E8A6D4A7BB25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C065B371D407417C1CE2331 /* Pods.debug.xcconfig */,
+				CACFAECADE92588FFD8E1FD7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70DCCE4EDE89A8E7EE8EF314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A38235AD93E216A3E42A787 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3E02EA31C15104A00030EB4 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +135,8 @@
 				C3E02EC21C15104A00030EB4 /* Distress_JohannHinck WatchKit App */,
 				C3E02ED11C15104A00030EB4 /* Distress_JohannHinck WatchKit Extension */,
 				C3E02EAD1C15104A00030EB4 /* Products */,
+				69A3163DF570E8A6D4A7BB25 /* Pods */,
+				70DCCE4EDE89A8E7EE8EF314 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +159,9 @@
 				C3E02EB61C15104A00030EB4 /* Assets.xcassets */,
 				C3E02EB81C15104A00030EB4 /* LaunchScreen.storyboard */,
 				C3E02EBB1C15104A00030EB4 /* Info.plist */,
+				C3E02EE81C15140400030EB4 /* CustomCVCell.swift */,
+				C32ABF011C1531F800D933F5 /* CreateDistressVC.swift */,
+				C32ABF031C15352F00D933F5 /* DistressCore.swift */,
 			);
 			path = Distress_JohannHinck;
 			sourceTree = "<group>";
@@ -161,10 +194,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3E02EE31C15104A00030EB4 /* Build configuration list for PBXNativeTarget "Distress_JohannHinck" */;
 			buildPhases = (
+				AE2330C084813F7DE325A1F7 /* Check Pods Manifest.lock */,
 				C3E02EA81C15104A00030EB4 /* Sources */,
 				C3E02EA91C15104A00030EB4 /* Frameworks */,
 				C3E02EAA1C15104A00030EB4 /* Resources */,
 				C3E02EE21C15104A00030EB4 /* Embed Watch Content */,
+				D9F026CBFCCA76863F0395F3 /* Embed Pods Frameworks */,
+				62CD751B5E92CD7A41238716 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,13 +316,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62CD751B5E92CD7A41238716 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE2330C084813F7DE325A1F7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9F026CBFCCA76863F0395F3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3E02EA81C15104A00030EB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E02EE91C15140400030EB4 /* CustomCVCell.swift in Sources */,
 				C3E02EB21C15104A00030EB4 /* ViewController.swift in Sources */,
 				C3E02EB01C15104A00030EB4 /* AppDelegate.swift in Sources */,
+				C32ABF041C15352F00D933F5 /* DistressCore.swift in Sources */,
+				C32ABF021C1531F800D933F5 /* CreateDistressVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +574,7 @@
 		};
 		C3E02EE41C15104A00030EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C065B371D407417C1CE2331 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Distress_JohannHinck/Info.plist;
@@ -498,6 +586,7 @@
 		};
 		C3E02EE51C15104A00030EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CACFAECADE92588FFD8E1FD7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Distress_JohannHinck/Info.plist;
@@ -526,6 +615,7 @@
 				C3E02EDD1C15104A00030EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3E02EDF1C15104A00030EB4 /* Build configuration list for PBXNativeTarget "Distress_JohannHinck WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +624,7 @@
 				C3E02EE11C15104A00030EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3E02EE31C15104A00030EB4 /* Build configuration list for PBXNativeTarget "Distress_JohannHinck" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +633,7 @@
 				C3E02EE51C15104A00030EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
