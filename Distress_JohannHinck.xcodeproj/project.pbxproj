@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		24C304F4DC553421D8118CB1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A38235AD93E216A3E42A787 /* Pods.framework */; };
-		C32ABF021C1531F800D933F5 /* CreateDistressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ABF011C1531F800D933F5 /* CreateDistressVC.swift */; settings = {ASSET_TAGS = (); }; };
-		C32ABF041C15352F00D933F5 /* DistressCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ABF031C15352F00D933F5 /* DistressCore.swift */; settings = {ASSET_TAGS = (); }; };
+		C32ABF021C1531F800D933F5 /* NewMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ABF011C1531F800D933F5 /* NewMessageVC.swift */; settings = {ASSET_TAGS = (); }; };
+		C32ABF041C15352F00D933F5 /* PhoneCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ABF031C15352F00D933F5 /* PhoneCore.swift */; settings = {ASSET_TAGS = (); }; };
+		C3BB4FFC1C17F1A500395D52 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB4FFB1C17F1A500395D52 /* LoginVC.swift */; settings = {ASSET_TAGS = (); }; };
+		C3BB4FFE1C17F2B400395D52 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB4FFD1C17F2B400395D52 /* RegisterVC.swift */; settings = {ASSET_TAGS = (); }; };
 		C3E02EB01C15104A00030EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E02EAF1C15104A00030EB4 /* AppDelegate.swift */; };
 		C3E02EB21C15104A00030EB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E02EB11C15104A00030EB4 /* ViewController.swift */; };
 		C3E02EB51C15104A00030EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E02EB31C15104A00030EB4 /* Main.storyboard */; };
@@ -70,8 +72,10 @@
 /* Begin PBXFileReference section */
 		0C065B371D407417C1CE2331 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8A38235AD93E216A3E42A787 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32ABF011C1531F800D933F5 /* CreateDistressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDistressVC.swift; sourceTree = "<group>"; };
-		C32ABF031C15352F00D933F5 /* DistressCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistressCore.swift; sourceTree = "<group>"; };
+		C32ABF011C1531F800D933F5 /* NewMessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageVC.swift; sourceTree = "<group>"; };
+		C32ABF031C15352F00D933F5 /* PhoneCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneCore.swift; sourceTree = "<group>"; };
+		C3BB4FFB1C17F1A500395D52 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C3BB4FFD1C17F2B400395D52 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		C3E02EAC1C15104A00030EB4 /* Distress_JohannHinck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Distress_JohannHinck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E02EAF1C15104A00030EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E02EB11C15104A00030EB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,8 +164,10 @@
 				C3E02EB81C15104A00030EB4 /* LaunchScreen.storyboard */,
 				C3E02EBB1C15104A00030EB4 /* Info.plist */,
 				C3E02EE81C15140400030EB4 /* CustomCVCell.swift */,
-				C32ABF011C1531F800D933F5 /* CreateDistressVC.swift */,
-				C32ABF031C15352F00D933F5 /* DistressCore.swift */,
+				C32ABF011C1531F800D933F5 /* NewMessageVC.swift */,
+				C32ABF031C15352F00D933F5 /* PhoneCore.swift */,
+				C3BB4FFB1C17F1A500395D52 /* LoginVC.swift */,
+				C3BB4FFD1C17F2B400395D52 /* RegisterVC.swift */,
 			);
 			path = Distress_JohannHinck;
 			sourceTree = "<group>";
@@ -253,7 +259,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Hinck, Johann A";
+				ORGANIZATIONNAME = Concordia;
 				TargetAttributes = {
 					C3E02EAB1C15104A00030EB4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -371,9 +377,11 @@
 			files = (
 				C3E02EE91C15140400030EB4 /* CustomCVCell.swift in Sources */,
 				C3E02EB21C15104A00030EB4 /* ViewController.swift in Sources */,
+				C3BB4FFC1C17F1A500395D52 /* LoginVC.swift in Sources */,
 				C3E02EB01C15104A00030EB4 /* AppDelegate.swift in Sources */,
-				C32ABF041C15352F00D933F5 /* DistressCore.swift in Sources */,
-				C32ABF021C1531F800D933F5 /* CreateDistressVC.swift in Sources */,
+				C3BB4FFE1C17F2B400395D52 /* RegisterVC.swift in Sources */,
+				C32ABF041C15352F00D933F5 /* PhoneCore.swift in Sources */,
+				C32ABF021C1531F800D933F5 /* NewMessageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

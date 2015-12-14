@@ -1,15 +1,20 @@
 //
-//  DistressCore.swift
-//  Distress_JohannHinck
+//  PhoneCore.swift
+//  DiceRoller
 //
-//  Created by Hinck, Johann A on 12/6/15.
-//  Copyright © 2015 Hinck, Johann A. All rights reserved.
+//  Created by Michael Litman on 11/11/15.
+//  Copyright © 2015 awesomefat. All rights reserved.
 //
 
 import UIKit
+import Parse
 
-class DistressCore: NSObject
+class PhoneCore: NSObject
 {
+    static var currentUser: PFUser!
+    static var theRowData  = [String]()
+    
+    
     static func showAlert(title: String, message: String, presentingViewController: UIViewController, onScreenDelay: Double)
     {
         let av = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)

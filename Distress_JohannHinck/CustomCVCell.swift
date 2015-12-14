@@ -11,5 +11,11 @@ import UIKit
 class CustomCVCell: UICollectionViewCell
 {
     @IBOutlet weak var theLabel: UILabel!
+    override func awakeFromNib()
+    {
+        super.awakeFromNib()
+    }
+    
+    
     
 }

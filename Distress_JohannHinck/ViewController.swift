@@ -9,34 +9,43 @@
 import UIKit
 import Parse
 
-
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate
 {
     
     var count = 0
     
-    @IBAction func NextScreen(sender: AnyObject)
-    {
-    }
     @IBOutlet weak var theCV: UICollectionView!
-    @IBAction func addButtenPressed(sender: AnyObject)  {
-        count++
-        print(count)
-        self.theCV.reloadData()
-    }
-   
     
+   
     override func viewDidLoad()
     {
-        super.viewDidLoad()
         
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject["name"] = "Johann"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            print("Object has been saved.")
-        }
+        super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("query?")
+        
+        self.theCV.reloadData()
+        let query = PFQuery(className:"Message")
+        query.whereKey("owner_id", equalTo: PhoneCore.currentUser)
+        query.findObjectsInBackgroundWithBlock { (objects : [PFObject]?, error: NSError?) -> Void in
+            if(objects != nil)
+            {
+                print("\(objects)")
+                for object in objects!
+                {
+                    PhoneCore.theRowData.append(object["message_text"] as! String)
+                }
+                self.count = objects!.count
+                self.theCV.reloadData()
+                
+            }
+            else
+            {
+                print("None Found")
+            }
+        }
+        
+        
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int
@@ -57,12 +66,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CustomCVCell
         
         // Configure the cell
+        cell.theLabel.text = PhoneCore.theRowData[indexPath.row]
         cell.backgroundColor = UIColor.redColor()
-        cell.theLabel.text = "blah"
+        
+        
+        
         return cell
     }
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
